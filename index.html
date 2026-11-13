@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Board Gamers | Quoridor P2P</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-cyan: #00e5ff;
+            --accent-amber: #ffc107;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+        header { padding: 2rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--accent-cyan); display: flex; align-items: center; gap: 10px; }
+        nav a { color: var(--text-muted); text-decoration: none; margin-left: 2rem; transition: color 0.2s; }
+        nav a:hover { color: var(--accent-cyan); }
+        .hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 1rem; max-width: 800px; margin: 0 auto; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; background: linear-gradient(135deg, #00e5ff, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.25rem; color: var(--text-muted); margin-bottom: 2rem; }
+        .badge { display: inline-block; background: rgba(0, 229, 255, 0.1); color: var(--accent-cyan); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.5rem; border: 1px solid rgba(0, 229, 255, 0.3); }
+        .btn-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .btn { background: var(--accent-cyan); color: #0f172a; padding: 0.875rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: transform 0.2s, opacity 0.2s; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .btn-secondary { background: transparent; color: var(--text-main); border: 1px solid #475569; }
+        .btn-secondary:hover { border-color: var(--accent-cyan); color: var(--accent-cyan); }
+        features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; width: 100%; max-width: 1000px; margin: 4rem auto; padding: 0 1rem; }
+        .card { background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid #334155; text-align: left; }
+        .card h3 { color: var(--accent-amber); margin-bottom: 0.75s; font-size: 1.25rem; }
+        .card p { color: var(--text-muted); font-size: 0.95rem; }
+        footer { text-align: center; padding: 2rem; border-top: 1px solid #334155; color: var(--text-muted); font-size: 0.875rem; }
+        footer a { color: var(--accent-cyan); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🎲 Tiny Board Gamers</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="badge">Now Available on Google Play Store</div>
+        <h1>Quoridor P2P</h1>
+        <p>Experience tactical board gaming like never before. Play locally over Wi-Fi P2P with friends or enjoy classic pass-and-play matches with zero cloud lag and complete privacy.</p>
+        <div class="btn-group">
+            <a href="https://play.google.com/store" class="btn">Get it on Google Play</a>
+            <a href="privacy.html" class="btn btn-secondary">Privacy Policy</a>
+        </div>
+    </div>
+
+    <section id="features" style="max-width: 1000px; margin: 0 auto; padding: 0 1rem;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+            <div class="card">
+                <h3>Local P2P Multiplayer</h3>
+                <p>Connect instantly with nearby friends over Wi-Fi without needing internet or remote servers.</p>
+            </div>
+            <div class="card">
+                <h3>Zero Data Collection</h3>
+                <p>We respect your privacy. No personal data or telemetry is collected, tracked, or shared.</p>
+            </div>
+            <div class="card">
+                <h3>Pure Strategy</h3>
+                <p>Immersive Jetpack Compose UI with smooth animations, custom board layouts, and tactile wall placement.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tiny Board Gamers. All rights reserved. &bull; <a href="privacy.html">Privacy Policy</a> &bull; <a href="terms.html">Terms & Conditions</a></p>
+    </footer>
+</body>
+</html>
